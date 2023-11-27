@@ -1,18 +1,24 @@
 body {
     background: #f7f7f7;
     color: #2F2F2F;
-    font-family: 'Roboto', sans-serif;
-}
+    font-family: 'Roboto', sans-serif;}
+
 section, header {
     width: 80%;
     max-width: 800px;
-    margin: auto;
-}
+    margin: auto;}
+
 img {
     display: block;
     padding: 0;
-    max-width: 100%;
-}
+    max-width: 100%;}
+
+    .mainimg{
+        margin: 4em auto;
+    }
+
+    .kernloose {letter-spacing: 5px;}
+    .imgbym {margin-bottom: 4rem;}
 
 /*---- Styling typography ----*/
 h1, h2, h3{
@@ -39,7 +45,7 @@ h2{
 
 blockquote {
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0;
     hanging-punctuation: first;
     text-indent: -0.5rem;
@@ -61,11 +67,31 @@ header h2 {
     margin-bottom: 1.5;
 }
 
-/*--- styling ---*/
+header p {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.leader{
+    text-transform: uppercase;
+}
+
+.dropcap {
+    float: left;
+    line-height: 60%;
+    width: .7em;
+    font-size: 400%;
+    color: #000000;
+    font-style: bold;
+    font-family: 'Bodoni Moda', serif;
+    }
+
+/*--- styling links ---*/
 a{
     color: #f7f7f7;
-    
+    text-decoration: none;
 }
+
 a:hover{
     color: #333;
     border-bottom: 1px dotted;
@@ -82,14 +108,19 @@ nav {
     color: #f7f7f7;
     padding: 2rem 0;
     font-size: 0.8rem;
-
 }
+
+responsivenav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
 
 nav ul{
 text-align: right;
 font-style: italic;
 letter-spacing: 1px;
 list-style-type: none;
+padding-right: 64px;
 }
 
 nav a:link{
@@ -101,11 +132,62 @@ nav ul li{
     margin: 20px;
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
 nav a:hover{
     border-bottom: none;
+    color: #333;
     transition: all 0.3s ease-in-out;
 }
 
+/*--alighnment of images---*/
+
+.imgsmall{
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-gap: 40px;
+
+/*---column grid---*/
+
+grid-template-columns: repeat(auto-fill,minmax(375px, 1fr))
+}
+
+/*---scher design---*/
+
+.dark{
+    background: rgb(176, 217, 221);
+    padding: 6rem 0;
+    color: #333;
+    
+}
+
+.dark h2,blockqoute, cite{
+    color: #f7f7f7;
+}
+
+.dark a {
+    color: #f7f7f7;
+    font-weight: bold;
+    border-bottom: 1px dotted;
+}
+
+.list ul {
+    line-height: 1.5;
+    margin-left: 0;
+}
+
+.list li {
+    margin-bottom: 1rem;
+    list-style-type: none;
+    margin-left: -2.5rem;
+}
 .logo {
     font-size: 1.8rem;
     text-align: left;
@@ -113,7 +195,7 @@ nav a:hover{
 }
 
 footer{
-    background-color: #FA4238;
+    background-color: #81bed1;
     text-align: center;
     font-size: 0.8rem;
     color: #f7f7f7;
@@ -121,7 +203,70 @@ footer{
     margin-top: 2rem;
 }
 
-footer{
-    margin: 0 9rem;
-    
+footer p {
+    margin: 0 12rem;
 }
+
+footer a{
+    color: rgb(1, 1, 1);
+}
+
+footer a:hover {
+    color: #f7f7f7;
+    transition: all 0.3s ease-in-out;
+}
+
+.connections{
+    position: relative;
+    margin: 0 auto;
+}
+
+.connections ul{
+    margin: 0;
+    padding: 0;
+}
+
+.connections li{
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;  
+}
+
+.connections a:link{
+        border-bottom: none;      
+    }
+
+.connections img, .connections svg{
+    border: none;
+}
+
+.connections a:hover img, .connections a:hover svg{
+    border-bottom: none;
+}
+
+ .connections svg {
+    margin: 2rem auto;
+}
+
+.connections a:hover svg path {
+    fill: #333;
+    transition: all 0.2s ease-in-out;
+}
+
+footer .connections a:hover svg path {
+    fill:  #C2C2C2;
+    transition: all 0.2s ease-in-out;
+}
+
+/*--- adding media for device types---*/
+@media (max-width: 600px) {
+    nav{ flex-direction: column;
+    align-items: center;}
+}
+
+nav ul li{
+    display: list-item;
+    margin: 10px;
+}
+
