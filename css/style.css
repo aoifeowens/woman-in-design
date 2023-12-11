@@ -8,6 +8,16 @@ section, header {
     max-width: 800px;
     margin: auto;}
 
+.imgbtm{
+    margin-top: 2rem;
+}
+.gridimg{
+    display: grid;
+    gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr))
+}
+
 img {
     display: block;
     padding: 0;
@@ -110,7 +120,7 @@ nav {
     font-size: 0.8rem;
 }
 
-responsivenav {
+responsivenav{
     display: flex;
     justify-content: space-between;
     align-items: center;}
@@ -146,7 +156,10 @@ nav a:hover{
 }
 
 /*--alighnment of images---*/
-
+.head {
+    background-color: #92c3d9;
+    padding: 1rem;
+}
 .imgsmall{
     max-width: 800px;
     margin: auto;
@@ -162,7 +175,7 @@ grid-template-columns: repeat(auto-fill,minmax(375px, 1fr))
 /*---scher design---*/
 
 .dark{
-    background: rgb(176, 217, 221);
+    background: rgb(221, 176, 208);
     padding: 6rem 0;
     color: #333;
     
@@ -173,9 +186,11 @@ grid-template-columns: repeat(auto-fill,minmax(375px, 1fr))
 }
 
 .dark a {
-    color: #f7f7f7;
+    color: #000000;
     font-weight: bold;
     border-bottom: 1px dotted;
+    margin-bottom: 6rem;
+   
 }
 
 .list ul {
@@ -195,7 +210,7 @@ grid-template-columns: repeat(auto-fill,minmax(375px, 1fr))
 }
 
 footer{
-    background-color: #81bed1;
+    background-color: #FA4238;
     text-align: center;
     font-size: 0.8rem;
     color: #f7f7f7;
