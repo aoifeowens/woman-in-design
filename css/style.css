@@ -6,7 +6,8 @@ body {
 section, header {
     width: 80%;
     max-width: 800px;
-    margin: auto;}
+    margin: auto;
+    padding: 2rem;}
 
 .imgbtm{
     margin-top: 2rem;
@@ -93,8 +94,7 @@ header p {
     font-size: 400%;
     color: #000000;
     font-style: bold;
-    font-family: 'Bodoni Moda', serif;
-    }
+    font-family: 'Bodoni Moda', serif;}
 
 /*--- styling links ---*/
 a{
@@ -158,7 +158,7 @@ nav a:hover{
 /*--alighnment of images---*/
 .head {
     background-color: #92c3d9;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .imgsmall{
     max-width: 800px;
@@ -178,6 +178,7 @@ grid-template-columns: repeat(auto-fill,minmax(375px, 1fr))
     background: rgb(221, 176, 208);
     padding: 6rem 0;
     color: #333;
+    padding: 1rem;
     
 }
 
@@ -285,3 +286,42 @@ nav ul li{
     margin: 10px;
 }
 
+body {
+  margin: 0;
+  font-family: 'bodoni moda'}
+
+.navbar {
+  background-color: #FA4238;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #92c3d9;
+}
